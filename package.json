@@ -1,12 +1,13 @@
 {
   "name": "shivam-test-package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Test",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf lib/ && tsc",
+    "format": "",
     "prepare": "npm run build",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
