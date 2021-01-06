@@ -1,0 +1,30 @@
+{
+  "name": "my-test-package",
+  "version": "1.0.0",
+  "description": "Test",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf lib/ && tsc",
+    "prepare": "npm run build",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "files": [
+    "lib/src/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akaShivam/package.git"
+  },
+  "author": "Shivam Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akaShivam/package/issues"
+  },
+  "homepage": "https://github.com/akaShivam/package#readme",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}
