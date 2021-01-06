@@ -1,7 +1,8 @@
 import table from './helper/table';
 
-export default class Test {
+export class Test {
   getObj(num : string) {
     return new table(num);
   }
 }
+export default Test;
